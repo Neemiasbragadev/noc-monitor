@@ -1,0 +1,7 @@
+services:
+  noc-monitor:
+    build: .
+    container_name: noc-monitor
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
